@@ -1,7 +1,7 @@
-const uiGroups = require('nova-colors').uiGroups
-const syntaxGroups = require('nova-colors').syntaxGroups
-const ansiGroups = require('nova-colors').ansiGroups
-const versionControlGroups = require('nova-colors').versionControlGroups
+const uiGroups = require('@everdimension/nova-colors').uiGroups
+const syntaxGroups = require('@everdimension/nova-colors').syntaxGroups
+const ansiGroups = require('@everdimension/nova-colors').ansiGroups
+const versionControlGroups = require('@everdimension/nova-colors').versionControlGroups
 
 const sourceString =`
 

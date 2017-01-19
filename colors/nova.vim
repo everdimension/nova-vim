@@ -8,7 +8,7 @@
 function! s:highlight_helper(...)
   let l:syntax_group = a:1
   let l:foreground_color = a:2
-  let l:background_color = empty(a:3) ? "#3C4C55" : a:3
+  let l:background_color = empty(a:3) ? "#414141" : a:3
   let l:gui = a:0 == 3 ? "None" : a:4
 
   exec "highlight " . l:syntax_group . " guifg=" . l:foreground_color . " guibg=" . l:background_color . " gui=" . l:gui . " cterm=NONE term=NONE"
@@ -30,7 +30,7 @@ let g:colors_name = "nova"
 call s:highlight_helper("Normal", "#C5D4DD", "")
 
 " NEOVIM TERMINAL MODE
-let g:terminal_color_0 = "#3C4C55"
+let g:terminal_color_0 = "#414141"
 let g:terminal_color_1 = "#DF8C8C"
 let g:terminal_color_2 = "#A8CE93"
 let g:terminal_color_3 = "#DADA93"
@@ -38,7 +38,7 @@ let g:terminal_color_4 = "#83AFE5"
 let g:terminal_color_5 = "#9A93E1"
 let g:terminal_color_6 = "#7FC1CA"
 let g:terminal_color_7 = "#C5D4DD"
-let g:terminal_color_8 = "#899BA6"
+let g:terminal_color_8 = "#8f979e"
 let g:terminal_color_9 = "#F2C38F"
 let g:terminal_color_10 = "#A8CE93"
 let g:terminal_color_11 = "#DADA93"
@@ -65,38 +65,38 @@ call s:highlight_helper("NeomakeWarningSign", "#DF8C8C", "")
 " USER CURRENT STATE
 call s:highlight_helper("MatchParen", "#7FC1CA", "NONE")
 call s:highlight_helper("CursorLineNr", "#7FC1CA", "")
-call s:highlight_helper("Visual", "#3C4C55", "#7FC1CA")
-call s:highlight_helper("VisualNOS", "#3C4C55", "#7FC1CA")
+call s:highlight_helper("Visual", "#414141", "#7FC1CA")
+call s:highlight_helper("VisualNOS", "#414141", "#7FC1CA")
 call s:highlight_helper("Folded", "#7FC1CA", "")
 call s:highlight_helper("FoldColumn", "#7FC1CA", "")
-call s:highlight_helper("IncSearch", "#7FC1CA", "#6A7D89")
-call s:highlight_helper("Search", "#7FC1CA", "#6A7D89")
-call s:highlight_helper("WildMenu", "#556873", "#7FC1CA")
+call s:highlight_helper("IncSearch", "#7FC1CA", "#727983")
+call s:highlight_helper("Search", "#7FC1CA", "#727983")
+call s:highlight_helper("WildMenu", "#636363", "#7FC1CA")
 call s:highlight_helper("Question", "#7FC1CA", "")
 call s:highlight_helper("MoreMsg", "#7FC1CA", "")
 call s:highlight_helper("ModeMsg", "#7FC1CA", "")
-call s:highlight_helper("StatusLine", "#7FC1CA", "#556873")
-call s:highlight_helper("PmenuSel", "#556873", "#7FC1CA")
+call s:highlight_helper("StatusLine", "#7FC1CA", "#636363")
+call s:highlight_helper("PmenuSel", "#636363", "#7FC1CA")
 call s:highlight_helper("PmenuThumb", "#7FC1CA", "#7FC1CA")
-call s:highlight_helper("CtrlPMatch", "#3C4C55", "#7FC1CA")
+call s:highlight_helper("CtrlPMatch", "#414141", "#7FC1CA")
 
 " GIT
-call s:highlight_helper("DiffAdd", "#3C4C55", "#A8CE93")
-call s:highlight_helper("DiffChange", "#3C4C55", "#F2C38F")
+call s:highlight_helper("DiffAdd", "#414141", "#A8CE93")
+call s:highlight_helper("DiffChange", "#414141", "#F2C38F")
 call s:highlight_helper("DiffDelete", "#DF8C8C", "")
-call s:highlight_helper("DiffText", "#3C4C55", "#F2C38F", "BOLD")
+call s:highlight_helper("DiffText", "#414141", "#F2C38F", "BOLD")
 
 " OTHER
 call s:highlight_helper("SignColumn", "NONE", "")
-call s:highlight_helper("LineNr", "#6A7D89", "")
-call s:highlight_helper("CursorLine", "NONE", "#556873")
-call s:highlight_helper("CursorColumn", "#556873", "")
-call s:highlight_helper("EndOfBuffer", "#556873", "")
-call s:highlight_helper("VertSplit", "#556873", "#556873")
-call s:highlight_helper("StatusLineNC", "#3C4C55", "#556873")
-call s:highlight_helper("Pmenu", "#C5D4DD", "#556873")
-call s:highlight_helper("PmenuSbar", "#899BA6", "#899BA6")
-call s:highlight_helper("ColorColumn", "#556873", "")
+call s:highlight_helper("LineNr", "#727983", "")
+call s:highlight_helper("CursorLine", "NONE", "#636363")
+call s:highlight_helper("CursorColumn", "#636363", "")
+call s:highlight_helper("EndOfBuffer", "#636363", "")
+call s:highlight_helper("VertSplit", "#636363", "#636363")
+call s:highlight_helper("StatusLineNC", "#414141", "#636363")
+call s:highlight_helper("Pmenu", "#C5D4DD", "#636363")
+call s:highlight_helper("PmenuSbar", "#8f979e", "#8f979e")
+call s:highlight_helper("ColorColumn", "#636363", "")
 
 
 " ==================================================================
@@ -227,14 +227,14 @@ call s:highlight_helper("netrwVersion", "#F2C38F", "")
 call s:highlight_helper("CtrlPStats", "#F2C38F", "")
 
 " TRIVIAL
-call s:highlight_helper("Comment", "#899BA6", "")
-call s:highlight_helper("Ignore", "#899BA6", "")
-call s:highlight_helper("Conceal", "#899BA6", "")
-call s:highlight_helper("Noise", "#899BA6", "")
-call s:highlight_helper("jsNoise", "#899BA6", "")
-call s:highlight_helper("cssClassNameDot", "#899BA6", "")
-call s:highlight_helper("jsonQuote", "#899BA6", "")
-call s:highlight_helper("shQuote", "#899BA6", "")
+call s:highlight_helper("Comment", "#8f979e", "")
+call s:highlight_helper("Ignore", "#8f979e", "")
+call s:highlight_helper("Conceal", "#8f979e", "")
+call s:highlight_helper("Noise", "#8f979e", "")
+call s:highlight_helper("jsNoise", "#8f979e", "")
+call s:highlight_helper("cssClassNameDot", "#8f979e", "")
+call s:highlight_helper("jsonQuote", "#8f979e", "")
+call s:highlight_helper("shQuote", "#8f979e", "")
 
 " ==================================================================
 " COMMON PLUGINS
@@ -250,4 +250,4 @@ call s:highlight_helper("GitGutterDelete", "#DF8C8C", "")
 call s:highlight_helper("EasyMotionTarget", "#DF8C8C", "", "BOLD")
 call s:highlight_helper("EasyMotionTarget2First", "#F2C38F", "")
 call s:highlight_helper("EasyMotionTarget2Second", "#DADA93", "")
-call s:highlight_helper("EasyMotionShade", "#899BA6", "")
+call s:highlight_helper("EasyMotionShade", "#8f979e", "")
